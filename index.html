@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 03</title>
+    <!--Google icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--daisyUI CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Style-->
+    <style>
+      .font-Sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+
+    <!--tailwind custom styles-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "nature-primary": "rgb(23, 152, 0);",
+              "nature-primary-bg1": "rgb(16, 40, 97);",
+              "nature-primary-bg2": "rgb(17, 84, 20);",
+              "nature-primary-bg3": "rgb(239, 235, 227);",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Sora">
+    <!--Header-->
+    <header class="md:container mx-auto">
+      <!--Navbar-->
+      <div class="navbar">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="hidden md:flex">
+              <img src="c2-assets/logo-header.png" alt="none" />
+            </div>
+            <div class="flex md:hidden">
+              <img src="c2-assets/logo-header2.png" alt="none" />
+            </div>
+          </div>
+          <div class="navbar-center hidden md:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Service</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-x-3">
+            <div class="gap-x-3 hidden lg:flex">
+              <i class="fa-solid fa-magnifying-glass w-auto"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="flex md:hidden">
+              <i class="fa-solid fa-bars text-nature-primary"></i>
+            </div>
+            <div class="hidden md:flex gap-3">
+              <button class="btn border-nature-primary bg-white px-6">
+                Login
+              </button>
+              <button class="btn bg-nature-primary text-white">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full">
+      <!--Hero section-->
+      <div class="span-y-3 bg-gradient-to-t from-nature-primary-bg3 w-full">
+        <div class="hero">
+          <div class="hero-content text-center">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-bold">
+                Freshness
+                <span class="text-nature-primary">you can <br />count</span>
+                On, Prices You'll Love!
+              </h1>
+              <p class="py-6">
+                Shop your daily essentials at unbeatable prices. From fresh
+                produce to pantry staples, we’ve got you covered every day!
+              </p>
+              <div>
+                <img src="c2-assets/hero-vegetables.png" alt="none" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Service section cards-->
+      <div class="mx:auto lg:m-24">
+        <div class="p-5">
+          <h1 class="text-3xl font-bold text-nature-primary">Services</h1>
+        </div>
+        <!--Cards-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card py-4 bg-nature-primary-bg3 shadow-xl">
+            <div class="avatar justify-center items-center">
+              <div class="rounded-full bg-white">
+                <div class="border-2 m-6">
+                  <img src="c2-assets/service.png" />
+                </div>
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services</h2>
+              <p>
+                services available 24 hours a week ! don't miss out! Take your
+                chance now and lead healthy ,happy life.
+              </p>
+              <div></div>
+            </div>
+          </div>
+          <div class="card py-4 bg-nature-primary-bg3 shadow-xl">
+            <div class="avatar justify-center items-center">
+              <div class="rounded-full bg-white">
+                <div class="border-2 m-6">
+                  <img src="c2-assets/delivery.png" />
+                </div>
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>
+                Super fast delivery available everydays a week ! don't miss out!
+                Take your chance now and lead healthy ,happy life.
+              </p>
+              <div></div>
+            </div>
+          </div>
+          <div class="card py-4 bg-nature-primary-bg3 shadow-xl">
+            <div class="avatar justify-center items-center">
+              <div class="rounded-full bg-white">
+                <div class="border-2 m-6">
+                  <img src="c2-assets/healthy.png" />
+                </div>
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Healthy Products</h2>
+              <p>
+                Eat and Drinks regularly and Stay healthy all the time ! don't
+                miss out! Take your chance now and lead healthy ,happy life.
+              </p>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Product Section-->
+      <div class="mx-auto bg-nature-primary-bg3 w-full">
+        <div>
+          <div class="mx-24 py-10">
+            <h1 class="text-3xl font-bold text-nature-primary">
+              Popular Products
+            </h1>
+          </div>
+          <!--Cards-->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-10">
+            <!--bid card left-->
+            <div
+              class="card bg-gradient-to-br from-nature-primary lg:w-auto shadow-xl"
+            >
+              <div class="card-body gap-y-4">
+                <h2 class="card-title text-3xl text-white">30% OFF!!</h2>
+                <p class="text-xl">
+                  Discover a world of treats, toys, and essentials handpicked
+                  for
+                </p>
+                <div class="card-actions">
+                  <button class="btn bg-white text-xl px-6">Buy Now</button>
+                </div>
+              </div>
+              <figure>
+                <img src="c2-assets/vegetable-offer.png" alt="none" />
+              </figure>
+            </div>
+            <!--grid columns-->
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-4 w-full"
+            >
+              <!--grid card1-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/onion.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Onion 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card2-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/potato.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Potato 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card3-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/tomato.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Tomato 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card4-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/potato.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Potato 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card5-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/tomato.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Tomato 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card6-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/onion.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Onion 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card7-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/tomato.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Tomato 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card8-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/onion.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Onion 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              <!--grid card9-->
+              <div class="hero bg-white rounded-xl w-auto px-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="c2-assets/potato.png"
+                    class="max-w-sm rounded-lg shadow-2xl"
+                  />
+                  <div class="span-y-3">
+                    <p class="py-2">
+                      <i class="fa-solid fa-star text-yellow-300 pr-2"></i>4.5
+                    </p>
+                    <h1 class="text-lg font-bold">Potato 1 KG</h1>
+                    <p class="py-2">$39.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
