@@ -97,11 +97,31 @@
         <div class="hero">
           <div class="hero-content text-center">
             <div class="max-w-md">
-              <h1 class="text-3xl font-bold">
+              <h1
+                class="text-4xl font-bold transform -translate-x-10 opacity-0 animate-slide-in"
+              >
                 Freshness
                 <span class="text-nature-primary">you can <br />count</span>
                 On, Prices You'll Love!
               </h1>
+
+              <style>
+                @keyframes slide-in {
+                  from {
+                    transform: translateX(-40px);
+                    opacity: 0;
+                  }
+                  to {
+                    transform: translateX(0);
+                    opacity: 1;
+                  }
+                }
+                @layer utilities {
+                  .animate-slide-in {
+                    animation: slide-in 1s ease-out forwards;
+                  }
+                }
+              </style>
               <p class="py-6">
                 Shop your daily essentials at unbeatable prices. From fresh
                 produce to pantry staples, we’ve got you covered every day!
