@@ -43,7 +43,9 @@
               "nature-primary": "rgb(23, 152, 0);",
               "nature-primary-bg1": "rgb(16, 40, 97);",
               "nature-primary-bg2": "rgb(17, 84, 20);",
+              "nature-primary-bg4": "rgb(99, 183, 109);",
               "nature-primary-bg3": "rgb(239, 235, 227);",
+              "nature-primary-bg5": "rgb(42, 77, 151)",
             },
           },
         },
@@ -91,7 +93,7 @@
     </header>
     <main class="w-full">
       <!--Hero section-->
-      <div class="span-y-3 bg-gradient-to-t from-nature-primary-bg3 w-full">
+      <div class="span-y-3 bg-gradient-to-t from-nature-primary-bg3">
         <div class="hero">
           <div class="hero-content text-center">
             <div class="max-w-md">
@@ -112,7 +114,7 @@
         </div>
       </div>
       <!--Service section cards-->
-      <div class="mx:auto lg:m-24">
+      <div class="mx-auto lg:m-24">
         <div class="p-5">
           <h1 class="text-3xl font-bold text-nature-primary">Services</h1>
         </div>
@@ -172,7 +174,7 @@
         </div>
       </div>
       <!--Product Section-->
-      <div class="mx-auto bg-nature-primary-bg3 w-full">
+      <div class="mx-auto bg-nature-primary-bg3 py-24">
         <div>
           <div class="mx-24 py-10">
             <h1 class="text-3xl font-bold text-nature-primary">
@@ -185,18 +187,20 @@
             <div
               class="card bg-gradient-to-br from-nature-primary lg:w-auto shadow-xl"
             >
-              <div class="card-body gap-y-4">
-                <h2 class="card-title text-3xl text-white">30% OFF!!</h2>
-                <p class="text-xl">
+              <div class="card-body">
+                <h2 class="card-title text-4xl text-white font-bold">
+                  30% OFF!!
+                </h2>
+                <p class="text-3xl pb-4 font-light">
                   Discover a world of treats, toys, and essentials handpicked
                   for
                 </p>
-                <div class="card-actions">
+                <div class="card-actons">
                   <button class="btn bg-white text-xl px-6">Buy Now</button>
                 </div>
               </div>
               <figure>
-                <img src="c2-assets/vegetable-offer.png" alt="none" />
+                <img src="c2-assets/vegetable-offer.png" alt="vegetable" />
               </figure>
             </div>
             <!--grid columns-->
@@ -347,6 +351,98 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Offer section-->
+      <div class="mx-auto lg:m-24">
+        <div class="py-10">
+          <h1 class="text-3xl font-bold text-nature-primary">
+            Arrival & Offers
+          </h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mx-6 w-auto">
+          <!--Green card-->
+          <div
+            class="flex items-center justify-center gap-3 bg-nature-primary-bg2 lg:w-auto shadow-2xl rounded-xl mx-1 p-2"
+          >
+            <div class="card-body">
+              <div class="card-title py-4">
+                <img src="c2-assets/dawat-logo.png" alt="" />
+              </div>
+              <div class="card-actions">
+                <button
+                  class="btn bg-nature-primary-bg4 text-white text-lg border-none font-light px-10"
+                >
+                  Cook Exotic Dishes
+                </button>
+              </div>
+              <p class="text-xl text-white py-4">
+                UP to <span class="font-bold">20% OFF</span>
+              </p>
+            </div>
+            <div>
+              <img src="c2-assets/dawat-mock-up.png" />
+            </div>
+          </div>
+          <!--Blue Card-->
+          <div
+            class="flex items-center justify-center bg-nature-primary-bg1 shadow-xl lg:w-5/6 rounded-2xl mx-1 p-4"
+          >
+            <div class="card-body">
+              <div class="card-title py-4">
+                <img src="c2-assets/india-gate-logo.png" alt="" />
+              </div>
+              <div class="card-actions">
+                <button
+                  class="btn bg-nature-primary-bg5 text-white text-lg border-none font-light px-10"
+                >
+                  World's No.1 Rice
+                </button>
+              </div>
+              <p class="text-xl text-white py-4">
+                UP to <span class="font-bold">20% OFF</span>
+              </p>
+            </div>
+            <div>
+              <img src="c2-assets/india-gate-mock-up.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Accordion Section -->
+      <div class="mx-auto lg:m-24">
+        <div class="p-5">
+          <h1 class="text-3xl font-bold text-nature-primary">Questionare</h1>
+        </div>
+        <div>
+          <div class="collapse collapse-arrow bg-base-200 my-2">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Why should you trust our brand ? Does it guarantee premimun
+              quality product?
+            </div>
+            <div class="collapse-content">
+              <p>We give 100% guarantee about product quality.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              Does it offer deliveries at home ?
+            </div>
+            <div class="collapse-content">
+              <p>Of course!</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              Are the prices affordable for all ?
+            </div>
+            <div class="collapse-content">
+              <p>We have products affordable for all!</p>
             </div>
           </div>
         </div>
